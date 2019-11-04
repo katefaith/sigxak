@@ -1,0 +1,45 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $dark-cyan;
+
+    @media (max-width: $breakpoint-tablet) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.nav-link {
+    position: relative;
+    margin: 22px 24px;
+    font-family: $font-family-signika;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $while;
+
+    &:hover {
+        font-weight: bold;
+    }
+
+    &:not(:last-child):after {
+        position: absolute;
+        content: "//";
+        right: -34px;
+    }
+
+    &:hover:after {
+        font-weight: normal;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        //width: 100%;
+        margin: 10px;
+        font-size: 14px;
+
+        &:not(:last-child):after {
+            content: "";
+        }
+    }
+}

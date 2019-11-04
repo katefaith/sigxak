@@ -1,8 +1,31 @@
 // fonts
+$font-family-open_sans: 'OpenSans', Arial, Helvetica, sans-serif;
+$font-family-signika: 'Signika', Arial, Helvetica, sans-serif;
 
 // colors
+$dark-cyan: #00a388;
+$strong-cyan: #02c5a5;
+$pale-cyan:#ecfffc;
+$black: #000000;
+$while: white;
+
+// text colors
+$text-color-primary: $black;
+$text-color-secondary: $while;
+
+// bg colors
+$bg-color-dark: $dark-cyan;
+$bg-color-light: $strong-cyan;
+$bg-color-lighter: $pale-cyan;
+$bg-color-black: $black;
 
 // breakpoints
-$bp-mobile: 320px;
-$bp-tablet: 768px;
-$bp-desktop: 1124px;
+$breakpoint-mobile: 375px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1440px;
+
+/*$breakpoint-xs: 320px;
+$breakpoint-s: 480px;
+$breakpoint-m: 768px;
+$breakpoint-l: 992px;
+$breakpoint-xl: 1200px;*/

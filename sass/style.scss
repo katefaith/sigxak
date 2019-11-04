@@ -3,9 +3,17 @@
 @import "global/fonts.scss";
 @import "variables.scss";
 
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+
 body {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: $font-family-open_sans;
   font-weight: normal;
   font-size: 14px;
   line-height: normal;
+  color: $text-color-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-signika;
 }
