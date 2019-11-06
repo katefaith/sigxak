@@ -1,0 +1,21 @@
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team__member {
+    flex-basis: 19.28%;
+
+    @media (max-width: $breakpoint-xl) {
+        flex-basis: 30%;
+    }
+
+    @media (max-width: $breakpoint-l) {
+        flex-basis: 46%;
+    }
+
+    @media (max-width: $breakpoint-s) {
+        flex-basis: 100%;
+    }
+}

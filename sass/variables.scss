@@ -7,11 +7,11 @@ $dark-cyan: #00a388;
 $strong-cyan: #02c5a5;
 $pale-cyan:#ecfffc;
 $black: #000000;
-$while: white;
+$white: white;
 
 // text colors
 $text-color-primary: $black;
-$text-color-secondary: $while;
+$text-color-secondary: $white;
 
 // bg colors
 $bg-color-dark: $dark-cyan;
@@ -20,12 +20,12 @@ $bg-color-lighter: $pale-cyan;
 $bg-color-black: $black;
 
 // breakpoints
-$breakpoint-mobile: 375px;
+/*$breakpoint-mobile: 375px;
 $breakpoint-tablet: 768px;
-$breakpoint-desktop: 1440px;
+$breakpoint-desktop: 1440px;*/
 
-/*$breakpoint-xs: 320px;
+$breakpoint-xs: 320px;
 $breakpoint-s: 480px;
 $breakpoint-m: 768px;
 $breakpoint-l: 992px;
-$breakpoint-xl: 1200px;*/
+$breakpoint-xl: 1200px;

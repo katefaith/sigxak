@@ -1,0 +1,55 @@
+.about {
+    background-color: $pale-cyan;
+}
+
+.about__wrapper {
+    @include container;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__team {
+    margin-bottom: 95px;
+}
+
+.about__title {
+    font-size: 48px;
+    margin-top: 95px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__descr {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-family: $font-family-signika;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+    font-size: 14px;
+    line-height: 2.15;
+
+    @media (max-width: $breakpoint-xl) {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: $breakpoint-l) {
+        flex-direction: column;
+    }
+}
+
+.about__paragraph {
+    flex-basis: 46%;
+    text-align: justify;
+
+    @media (max-width: $breakpoint-l) {
+
+    }
+}
