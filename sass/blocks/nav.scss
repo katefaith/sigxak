@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: $dark-cyan;
+    background-color: $bg-color-dark;
 
     @media (max-width: $breakpoint-m) {
         flex-direction: column;

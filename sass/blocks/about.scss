@@ -1,5 +1,5 @@
 .about {
-    background-color: $pale-cyan;
+    background-color: $bg-color-lighter;
 }
 
 .about__wrapper {
@@ -9,15 +9,23 @@
 }
 
 .about__team {
-    margin-bottom: 95px;
+    margin-bottom: 85px;
 }
 
 .about__title {
+    position: relative;
+    display: flex;
     font-size: 48px;
     margin-top: 95px;
     margin-bottom: 30px;
-    text-align: center;
+    justify-content: center;
     text-transform: uppercase;
+
+    &::after {
+        position: absolute;
+        content: "...";
+        bottom: -60%;
+    }
 }
 
 .about__descr {
