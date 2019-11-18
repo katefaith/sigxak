@@ -2,6 +2,7 @@
     background-color: $bg-color-lighter;
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 .portfolio__title {
@@ -17,6 +18,8 @@
         position: absolute;
         content: "...";
         bottom: -60%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     @media (max-width: $breakpoint-l) {
@@ -81,6 +84,10 @@
 
 .portfolio__filter-link--active {
     color: $dark-cyan;
+
+    &:after {
+        color: $black;
+    }
 }
 
 .portfolio__list {

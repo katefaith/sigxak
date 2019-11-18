@@ -1,0 +1,124 @@
+.services {
+
+}
+
+.services__wrapper {
+    @include container;
+    display: flex;
+    flex-direction: column;
+}
+
+.services__title {
+    display: flex;
+    position: relative;
+    font-size: 48px;
+    margin-top: 95px;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &::after {
+        position: absolute;
+        content: "...";
+        bottom: -60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media (max-width: $breakpoint-l) {
+        font-size: 38px;
+    }
+}
+
+.services__descr {
+    margin-top: 45px;
+    margin-bottom: 75px;
+    font-family: $font-family-signika;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services__list-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    flex-basis: 46%;
+
+    &:hover {
+        background-color: $bg-color-lighter;
+    }
+
+    @media (max-width: $breakpoint-m) {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+        background-color: $bg-color-lighter;
+    }
+}
+
+.services__list-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    height: 113px;
+    background-color: $bg-color-dark;
+    align-self: flex-start;
+
+    img {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.services__list-item-title {
+    margin: 15px 0 8px;
+    font-family: $font-family-signika;
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: 1.7px;
+
+    @media (max-width: $breakpoint-l) {
+        font-size: 28px;
+    }
+}
+
+.services__list-item-text {
+    margin: 0 10px 35px;
+    font-size: 14px;
+    color: $text-color-third;
+    line-height: 2.1;
+}
+
+.services__list-item-link {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    align-self: flex-end;
+    font-family: $font-family-signika;
+    font-size: 18px;
+    color: $text-color-primary;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: $breakpoint-m) {
+        display: block;
+    }
+}
+
+.services__list-item:hover > .services__list-item-link {
+    display: block;
+}
