@@ -41,6 +41,7 @@
 
 .about__text {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 85px;
     font-size: 14px;
@@ -51,7 +52,7 @@
     }
 
     @media (max-width: $breakpoint-l) {
-        flex-direction: column;
+        //flex-direction: column;
     }
 }
 
@@ -59,7 +60,7 @@
     flex-basis: 46%;
     text-align: justify;
 
-    @media (max-width: $breakpoint-l) {
-
+    @media (max-width: $breakpoint-m) {
+        flex-basis: 100%;
     }
 }

@@ -5,12 +5,9 @@
 }
 
 .team-member__photo {
-
-    img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .team-member__descr {
@@ -26,8 +23,8 @@
 
 .team-member__descr-on-hover {
     display: none;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     @media (max-width: $breakpoint-xl) {
         display: flex;
