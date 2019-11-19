@@ -1,0 +1,44 @@
+.blog {
+    background-color: $bg-color-lighter;
+    padding-bottom: 190px;
+}
+
+.blog__wrapper {
+    @include container;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__title {
+    position: relative;
+    display: flex;
+    font-size: 48px;
+    margin-top: 95px;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &::after {
+        position: absolute;
+        content: "...";
+        bottom: -60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.blog__descr {
+    margin-top: 45px;
+    margin-bottom: 65px;
+    font-family: $font-family-signika;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blog__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
