@@ -1,0 +1,13 @@
+.contacts__map {
+    height: 600px;
+
+    @media (max-width: $breakpoint-l) {
+        height: 400px;
+
+        iframe {
+            height: 400px;
+        }
+        
+    }
+}
+

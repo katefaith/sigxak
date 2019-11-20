@@ -1,6 +1,10 @@
 .blog {
     background-color: $bg-color-lighter;
-    padding-bottom: 190px;
+    padding-bottom: 180px;
+
+    @media (max-width: $breakpoint-l) {
+        padding-bottom: 60px;
+    }
 }
 
 .blog__wrapper {
